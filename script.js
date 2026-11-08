@@ -29,8 +29,6 @@ products.slice(0, 20).forEach((product) => {
 
     price.textContent = product.price
 
-    // productCard.style = "overflow: hidden; width: 200px; border-radius: 10px; background-color: white"
-
     productCard.appendChild(img)
     productCard.appendChild(productCardBody)
     itemBoxes.appendChild(productCard)
