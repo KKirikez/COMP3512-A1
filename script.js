@@ -17,18 +17,21 @@ products.slice(0, 20).forEach((product) => {
     productCardBody.appendChild(price)
     productCardBody.appendChild(addButton)
 
-    productCard.appendChild(productCardBody)
+    
 
     img.src = product.images[0]
     
     img.classList.add('productImage')
     productCard.classList.add('productCard')
+    productCardBody.classList.add('productCardBody')
 
-    // cardTitle.textContent = product.title
+    cardTitle.textContent = product.title
 
-    // price.textContent = product.price
+    price.textContent = product.price
 
     // productCard.style = "overflow: hidden; width: 200px; border-radius: 10px; background-color: white"
 
+    productCard.appendChild(img)
+    productCard.appendChild(productCardBody)
     itemBoxes.appendChild(productCard)
 });
