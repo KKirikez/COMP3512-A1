@@ -27,6 +27,11 @@ body {
     
 }
 
+.github{
+    width: 20px;
+    height: 20px;
+}
+
 .productImage{
     height: 200px; 
     width: auto;
