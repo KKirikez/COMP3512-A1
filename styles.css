@@ -15,7 +15,27 @@
 }
 
 #itemBoxes{
+    display: flex;
     margin:10px;
     min-height: 50rem;
-    min-width: 50rem;
+    /* min-width: 50rem; */
+    max-width: 49rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
+.productImage{
+    height: 200px; 
+    width: auto;
+    background-color: white;
+    border-color: black;
+    border-width: 10px;
+}
+
+.productCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
 }
