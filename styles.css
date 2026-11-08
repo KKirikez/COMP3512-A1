@@ -1,7 +1,8 @@
 #items{
     background-color: red;
-    min-height: 60rem;
-    min-width: 10rem
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #title{
@@ -10,5 +11,9 @@
 }
 
 #itemBoxes{
+    margin:10px;
     background-color: aqua;
+    min-height: 50rem;
+    min-width: 10rem;
+    
 }
