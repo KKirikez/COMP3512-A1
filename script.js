@@ -21,7 +21,16 @@ products.slice(0, 20).forEach((product) => {
     productCardBody.appendChild(addButton)
 
     img.src = product.images[0]
+    img.alt = product.title
     addButton.textContent = '+'
+
+    addButton.addEventListener('click', () => {
+        alert(`You clicked on ${product.title}, which has an ID of ${product.id}`)
+    });
+
+    img.addEventListener('click', () => {
+        alert(`This product has an ID of ${product.id}`)
+    });
     
     img.classList.add('productImage')
     productCard.classList.add('productCard')
