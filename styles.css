@@ -1,0 +1,14 @@
+#items{
+    background-color: red;
+    min-height: 60rem;
+    min-width: 10rem
+}
+
+#title{
+    background-color: blueviolet;
+    margin:10px
+}
+
+#itemBoxes{
+    background-color: aqua;
+}
