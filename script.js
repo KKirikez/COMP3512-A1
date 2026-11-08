@@ -9,25 +9,28 @@ products.slice(0, 20).forEach((product) => {
     const productCardBody = document.createElement('div')
     const cardTitle = document.createElement('h3')
     const price = document.createElement('p')
+    const text = document.createElement('div')
     const addButton = document.createElement('button')
+
 
     productCard.appendChild(img)
 
-    productCardBody.appendChild(cardTitle)
-    productCardBody.appendChild(price)
+    text.appendChild(cardTitle)
+    text.appendChild(price)
+    productCardBody.appendChild(text)
     productCardBody.appendChild(addButton)
 
-    
-
     img.src = product.images[0]
+    addButton.textContent = '+'
     
     img.classList.add('productImage')
     productCard.classList.add('productCard')
     productCardBody.classList.add('productCardBody')
+    addButton.classList.add('addButton')
 
     cardTitle.textContent = product.title
 
-    price.textContent = product.price
+    price.textContent = `$${product.price.toFixed(2)}`
 
     productCard.appendChild(img)
     productCard.appendChild(productCardBody)

@@ -10,7 +10,7 @@
     border-radius: 1rem;
 }
 
-#title h3{
+#title > h3{
     padding-left: 4rem;
 }
 
@@ -18,7 +18,6 @@
     display: flex;
     margin:10px;
     min-height: 50rem;
-    /* min-width: 50rem; */
     max-width: 49rem;
     flex-wrap: wrap;
     gap: 1rem;
@@ -29,13 +28,25 @@
     height: 200px; 
     width: auto;
     background-color: white;
-    border-color: black;
-    border-width: 10px;
+    border: 1px solid black;
 }
+
 
 .productCard{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 250px;
+}
+
+.productCardBody{
+    display: flex;
+    max-width: 200px;
+}
+
+.addButton{
+    margin:auto;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
 }
